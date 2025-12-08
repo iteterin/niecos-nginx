@@ -5,6 +5,6 @@ RUN tdnf install -y nginx && \
     tdnf clean all && \
     rm -rf /var/cache/tdnf/*
 
-EXPOSE 80
+EXPOSE 80 443
 
 CMD ["nginx", "-g", "daemon off;"]
